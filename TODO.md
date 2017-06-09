@@ -6,18 +6,20 @@
 * [X] ~~*Add basic performance benchmark.*~~
 * [X] ~~*Add CI (travis?).*~~
 * [X] ~~*Implement entire Struct and List API.*~~
-* [ ] Consider monorepo structure (`capnp-ts`, `capnpc-ts`, `capnp-ts-websocket-demo`, `capnp-ts-xhr-demo`).
+* [X] ~~*Consider monorepo structure (`capnp-ts`, `capnpc-ts`, `capnp-ts-websocket-demo`, `capnp-ts-xhr-demo`).*~~
+* [X] ~~*Implement/test schema compiler.*~~
+* [X] ~~*Flesh out readme.*~~
 * [ ] Hit 100% coverage.
-* [ ] Implement/test schema compiler.
-* [ ] Flesh out readme.
+* [ ] Hunt down unimplemented code, decide if it's necessary for 0.1.0.
 
 # Milestone: 0.2.0 (code quality)
 
+* [ ] Stop using private/public, stick to leading underscore for all internal class properties.
 * [ ] Implement `toJSON`/`fromJSON`.
+* [ ] Make the schema compiler configurable (somehow?).
 * [ ] Add JSDocs for the entire public API.
 * [ ] Check for unused methods (find references on each exported symbol/method).
 * [ ] Check for unused error strings.
-* [ ] Unit test all the things.
 * [ ] Carefully export only useful classes in `src/index.ts`.
 * [ ] Tighen down class member/method access.
 * [ ] Consider a separate ES6 build (with proxied array accessors).
@@ -25,7 +27,6 @@
 # Milestone: 0.3.0 (rpc)
 
 * [ ] Fill in implementation for everything in the rpc module.
-* [ ] Unit test all the things.
 * [ ] Try to make everything play nice with bluebird, ideally extending it.
 * [ ] Implement a reference WebSocket RPC transport.
 * [ ] Implement a reference node server & client to test WebSocket transport.
