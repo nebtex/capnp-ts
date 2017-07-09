@@ -172,7 +172,7 @@ tap.test('Message.onCreatePointer()', (t) => {
 
 tap.test('Message.toArrayBuffer()', (t) => {
 
-  t.equals(new Message().toArrayBuffer().byteLength, 8, 'should allocate segment 0 before converting');
+  t.equals(new Message().toArrayBuffer().byteLength, 16, 'should allocate segment 0 before converting');
 
   t.end();
 
