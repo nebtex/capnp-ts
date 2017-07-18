@@ -23,7 +23,7 @@ export function main() {
 
     trace('read complete');
 
-    const reqBuffer = new Buffer(chunks.reduce((l, chunk) => l + chunk.byteLength, -1));
+    const reqBuffer = new Buffer(chunks.reduce((l, chunk) => l + chunk.byteLength, 0));
 
     let i = 0;
 
