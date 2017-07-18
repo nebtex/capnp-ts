@@ -335,6 +335,10 @@ export function generateStructFieldMethods(
       get = ts.createCall(
         ts.createPropertyAccess(
           THIS, '_getList'), __, [offsetLiteral, ts.createIdentifier(listClass)]);
+      has = true;
+      init = ts.createCall(
+        ts.createPropertyAccess(
+          THIS, '_initList'), __, [offsetLiteral, ts.createIdentifier(listClass), ts.createIdentifier('length')]);
       set = copyFromValue;
 
       break;
