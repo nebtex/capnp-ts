@@ -323,6 +323,11 @@ export function generateStructFieldMethods(
 
         listClass = `${fullClassName}._${properName}`;
 
+      } else if (listClass === void(0)) {
+
+        /* istanbul ignore next */
+        throw new Error(format(E.GEN_UNSUPPORTED_LIST_ELEMENT_TYPE, whichElementType));
+
       }
 
       adopt = true;
